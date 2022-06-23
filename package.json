@@ -1,5 +1,5 @@
 {
-  "name": "tailscale-api",
+  "name": "@4lch4/tailscale-api",
   "displayName": "Tailscale API Lib",
   "version": "0.0.1",
   "description": "A wrapper library for the Tailscale API.",
