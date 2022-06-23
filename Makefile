@@ -31,3 +31,6 @@ watch-build: install-deps
 
 publish: install-deps
 	@pnpm publish
+
+pretty:
+	@prettier --write .
