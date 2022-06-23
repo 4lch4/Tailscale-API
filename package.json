@@ -25,7 +25,8 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "pretty": "prettier --write ."
+    "pretty": "prettier --write .",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "@4lch4/logger": "^1.9.2",
