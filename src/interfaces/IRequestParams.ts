@@ -6,9 +6,9 @@
  * Author						⸺ Devin W. Leaman (4lch4)
  * Company					⸺ 4lch4 Industries, LLC.
  * -----------------------------------------------------------------------------
- * File Path				⸺ /src/interfaces/IRequestProperties.ts
+ * File Path				⸺ /src/interfaces/IRequestParams.ts
  * File Created			⸺ 2022-06-23 @ 00:10:16-05:00
- * Last Modified		⸺ 2022-06-23 @ 08:50:15-05:00
+ * Last Modified		⸺ 2022-06-23 @ 09:03:25-05:00
  * Modified By			⸺ Devin W. Leaman (4lch4) (hey@4lch4.email)
  * -----------------------------------------------------------------------------
  * MIT License			⸺ https://opensource.org/licenses/MIT
@@ -19,7 +19,7 @@
 
 import { Method } from 'axios'
 
-export interface IRequestProperties {
+export interface IRequestParams {
   /** The HTTP method to use for the request. */
   method: Method
 

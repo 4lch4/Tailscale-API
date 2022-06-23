@@ -8,7 +8,7 @@
  * -----------------------------------------------------------------------------
  * File Path				⸺ /src/interfaces/IPreviewTailnetACLParams.ts
  * File Created			⸺ 2022-06-23 @ 01:27:03-05:00
- * Last Modified		⸺ 2022-06-23 @ 08:50:09-05:00
+ * Last Modified		⸺ 2022-06-23 @ 09:07:30-05:00
  * Modified By			⸺ Devin W. Leaman (4lch4) (hey@4lch4.email)
  * -----------------------------------------------------------------------------
  * MIT License			⸺ https://opensource.org/licenses/MIT
@@ -17,6 +17,10 @@
  * -----------------------------------------------------------------------------
  */
 
+/**
+ * The parameters that are available for the `/tailnet/${tailnet}/acl/preview`
+ * endpoint.
+ */
 export interface IPreviewTailnetACLParams {
   [key: string]: string
 

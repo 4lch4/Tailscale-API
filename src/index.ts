@@ -8,7 +8,7 @@
  * -----------------------------------------------------------------------------
  * File Path				⸺ /src/index.ts
  * File Created			⸺ 2022-06-23 @ 00:08:53-05:00
- * Last Modified		⸺ 2022-06-23 @ 08:49:16-05:00
+ * Last Modified		⸺ 2022-06-23 @ 09:07:04-05:00
  * Modified By			⸺ Devin W. Leaman (4lch4) (hey@4lch4.email)
  * -----------------------------------------------------------------------------
  * MIT License			⸺ https://opensource.org/licenses/MIT
@@ -20,7 +20,7 @@
 export {
   IAppConfig,
   IPreviewTailnetACLParams,
-  IRequestProperties,
+  IRequestParams,
   ITailnetCapabilities,
   ITailnetCapabilitiesCreate,
   ITailnetCapabilitiesDevices,

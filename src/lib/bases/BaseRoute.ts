@@ -8,7 +8,7 @@
  * -----------------------------------------------------------------------------
  * File Path				⸺ /src/lib/bases/BaseRoute.ts
  * File Created			⸺ 2022-06-23 @ 00:09:16-05:00
- * Last Modified		⸺ 2022-06-23 @ 08:49:52-05:00
+ * Last Modified		⸺ 2022-06-23 @ 09:04:14-05:00
  * Modified By			⸺ Devin W. Leaman (4lch4) (hey@4lch4.email)
  * -----------------------------------------------------------------------------
  * MIT License			⸺ https://opensource.org/licenses/MIT
@@ -18,7 +18,7 @@
  */
 
 import Axios, { AxiosInstance } from 'axios'
-import { IAppConfig, IRequestProperties } from '../../interfaces/index.js'
+import { IAppConfig, IRequestParams } from '../../interfaces/index.js'
 
 /** A base utility class that each API route class will extend. */
 export class BaseRoute {
@@ -47,10 +47,9 @@ export class BaseRoute {
   /**
    * Sends a request to the Tailscale API and returns the response.
    *
-   * @param props The properties of the request.
-   * @returns The response from the API.
+   * @param params The available parameters for sending a request.
    */
-  protected async sendRequest({ data, headers, method, params, url }: IRequestProperties) {
+  protected async sendRequest({ data, headers, method, params, url }: IRequestParams) {
     try {
       const {
         data: dataOut,
