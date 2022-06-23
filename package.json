@@ -1,7 +1,7 @@
 {
   "name": "@4lch4/tailscale-api",
   "displayName": "Tailscale API Lib",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A wrapper library for the Tailscale API.",
   "type": "module",
   "main": "./dist/index.js",
