@@ -1,0 +1,44 @@
+{
+  "name": "tailscale-api",
+  "displayName": "Tailscale API Lib",
+  "version": "0.0.0",
+  "description": "A wrapper library for the Tailscale API.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "author": {
+    "name": "4lch4",
+    "email": "hey@4lch4.email",
+    "url": "https://4lch4.com"
+  },
+  "license": "MIT",
+  "homepage": "https://urlcha.org/Lib-Tailscale-API",
+  "keywords": [
+    "tailscale",
+    "api",
+    "wrapper",
+    "library"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:4lch4/Tailscale-API.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "pretty": "prettier --write ."
+  },
+  "dependencies": {
+    "@4lch4/logger": "^1.9.2",
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "fs-extra": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.0.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
