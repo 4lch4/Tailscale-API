@@ -3,3 +3,4 @@ dist
 *lock*.yaml
 *lock*.yml
 *lock*.json
+tsconfig.json
