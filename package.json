@@ -10,10 +10,6 @@
     "email": "hey@4lch4.email",
     "url": "https://4lch4.com"
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
-  },
   "license": "MIT",
   "homepage": "https://urlcha.org/Lib-Tailscale-API",
   "keywords": [
