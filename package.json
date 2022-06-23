@@ -11,6 +11,9 @@
     "email": "hey@4lch4.email",
     "url": "https://4lch4.com"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "homepage": "https://4lch4.link/Tailscale-Lib",
   "keywords": [
