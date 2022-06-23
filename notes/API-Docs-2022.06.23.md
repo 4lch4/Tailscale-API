@@ -1115,7 +1115,7 @@ To reenable it, nameservers must be added back, and MagicDNS must be explicitly 
 ###### POST Body
 
 The DNS preferences in JSON. Currently, MagicDNS is the only setting available.
-`magicDNS` -  Automatically registers DNS names for devices in your tailnet.
+`magicDNS` - Automatically registers DNS names for devices in your tailnet.
 
 ```
 {
