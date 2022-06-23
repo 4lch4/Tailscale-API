@@ -1,70 +1,64 @@
 // Example/default ACLs for unrestricted connections.
 {
-	// Declare convenient hostname aliases to use in place of IP addresses.
-	"hosts": {
-		"aicado00":      "100.74.177.76",
-		"aicdashy":      "100.112.228.117",
-		"aicdocker00":   "100.75.16.46",
-		"aicdtag00":     "100.108.41.75",
-		"aicfocalboard": "100.87.204.10",
-		"aichhwiki":     "100.65.127.65",
-		"aicmimir":      "100.81.19.57",
-		"aicnodered00":  "100.127.69.33",
-		"aicpodgrab":    "100.105.120.106",
-		"aictestbench":  "100.114.201.56",
-		"aictheia":      "100.86.19.34",
-		"cloudron":      "100.115.166.120",
-		"hfpnas":        "100.109.17.92",
-		"lg-phone":      "100.103.147.113",
-	},
+  // Declare convenient hostname aliases to use in place of IP addresses.
+  "hosts": {
+    "aicado00": "100.74.177.76",
+    "aicdashy": "100.112.228.117",
+    "aicdocker00": "100.75.16.46",
+    "aicdtag00": "100.108.41.75",
+    "aicfocalboard": "100.87.204.10",
+    "aichhwiki": "100.65.127.65",
+    "aicmimir": "100.81.19.57",
+    "aicnodered00": "100.127.69.33",
+    "aicpodgrab": "100.105.120.106",
+    "aictestbench": "100.114.201.56",
+    "aictheia": "100.86.19.34",
+    "cloudron": "100.115.166.120",
+    "hfpnas": "100.109.17.92",
+    "lg-phone": "100.103.147.113"
+  },
 
-	// Access control lists.
-	"acls": [
-		// Match absolutely everything.
-		{
-			"action": "accept",
-			"users":  ["*"],
-			"ports":  ["*:*"],
-		},
-	],
+  // Access control lists.
+  "acls": [
+    // Match absolutely everything.
+    {
+      "action": "accept",
+      "users": ["*"],
+      "ports": ["*:*"]
+    }
+  ],
 
-	// Rules/policies for the Tailscale SSH feature.
-	"ssh": [
-		{
-			"action": "check",
-			"src":    ["autogroup:members"],
-			"dst": [
-				"tag:donyc",
-				"tag:donyc1",
-				"tag:donyc3",
-				"tag:do",
-				"tag:4ip",
-			],
-			"users":       ["4lch4@github"],
-			"checkPeriod": "6h",
-		},
-	],
+  // Rules/policies for the Tailscale SSH feature.
+  "ssh": [
+    {
+      "action": "check",
+      "src": ["autogroup:members"],
+      "dst": ["tag:donyc", "tag:donyc1", "tag:donyc3", "tag:do", "tag:4ip"],
+      "users": ["4lch4@github"],
+      "checkPeriod": "6h"
+    }
+  ],
 
-	// My custom ACL tags.
-	"tagOwners": {
-		// A tag for my devices hosted by DigitalOcean in any NYC region.
-		"tag:donyc": ["4lch4@github"],
+  // My custom ACL tags.
+  "tagOwners": {
+    // A tag for my devices hosted by DigitalOcean in any NYC region.
+    "tag:donyc": ["4lch4@github"],
 
-		// A tag for devices hosted by DigitalOcean and in the NYC1 region.
-		"tag:donyc1": ["4lch4@github"],
+    // A tag for devices hosted by DigitalOcean and in the NYC1 region.
+    "tag:donyc1": ["4lch4@github"],
 
-		// A tag for devices hosted by DigitalOcean and in the NYC3 region.
-		"tag:donyc3": ["4lch4@github"],
+    // A tag for devices hosted by DigitalOcean and in the NYC3 region.
+    "tag:donyc3": ["4lch4@github"],
 
-		// A tag for all of my devices hosted by DigitalOcean.
-		"tag:do": ["4lch4@github"],
+    // A tag for all of my devices hosted by DigitalOcean.
+    "tag:do": ["4lch4@github"],
 
-		// A tag for all of my "on-premise" devices that are hosted/running at home.
-		// The AIP is roughly "translated" to 4lch4 Industries, Premise.
-		"tag:aip": ["4lch4@github"],
+    // A tag for all of my "on-premise" devices that are hosted/running at home.
+    // The AIP is roughly "translated" to 4lch4 Industries, Premise.
+    "tag:aip": ["4lch4@github"],
 
-		// A tag for all of my cloud-hosted devices.
-		// The AIC is roughly "translated" to 4lch4 Industries, Cloud.
-		"tag:aic": ["4lch4@github"],
-	},
+    // A tag for all of my cloud-hosted devices.
+    // The AIC is roughly "translated" to 4lch4 Industries, Cloud.
+    "tag:aic": ["4lch4@github"]
+  }
 }
