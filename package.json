@@ -5,6 +5,7 @@
   "description": "A wrapper library for the Tailscale API.",
   "type": "module",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "author": {
     "name": "4lch4",
     "email": "hey@4lch4.email",
