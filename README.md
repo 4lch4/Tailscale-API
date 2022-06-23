@@ -1,4 +1,4 @@
-# Tailscale-API
+# Tailscale-Lib
 
 This repository/package is a wrapper library for interacting with [the Tailscale API][0]. It's written in TypeScript and published to the [NPM registry][1] and [GitHub Package Repository][2].
 

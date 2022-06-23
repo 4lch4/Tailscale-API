@@ -12,12 +12,13 @@
     "url": "https://4lch4.com"
   },
   "license": "MIT",
-  "homepage": "https://urlcha.org/Lib-Tailscale-API",
+  "homepage": "https://4lch4.link/Tailscale-Lib",
   "keywords": [
     "tailscale",
     "api",
     "wrapper",
-    "library"
+    "library",
+    "axios"
   ],
   "repository": {
     "type": "git",
